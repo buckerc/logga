@@ -10,7 +10,6 @@ end
 local LoggaFrame = CreateFrame("Frame")
 local running = false
 
-
 LoggaFrame:RegisterEvent("CHAT_MSG_MONSTER_EMOTE")
 LoggaFrame:RegisterEvent("CHAT_MSG_MONSTER_SAY") 
 LoggaFrame:RegisterEvent("CHAT_MSG_MONSTER_YELL") 
@@ -28,7 +27,6 @@ LoggaFrame:SetScript("OnEvent", function()
 		end
 	end
 end)
-
 
 SLASH_LOGGA1 = "/logga"
 SlashCmdList["LOGGA"] = function(cmd)
@@ -56,6 +54,7 @@ SlashCmdList["LOGGA"] = function(cmd)
         print('LOGGA addon available commands:')
         print('/logga start - starts the logging')
         print('/logga stops - stops the logging')
+        print('/logga status - is it currently logging?')
 
 	end
 end
