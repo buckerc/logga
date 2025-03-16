@@ -22,7 +22,7 @@ LoggaFrame:SetScript("OnEvent", function()
 	   or event == 'CHAT_MSG_MONSTER_YELL'  or event == 'CHAT_MSG_MONSTER_PARTY'
 	    or event == 'CHAT_MSG_MONSTER_WHISPER' then
 			if hasSuperWow then
-				CombatLogAdd("LOGGA_INFO: | " .. arg1 .. " | " .. arg2 .. " | " .. arg3)
+				CombatLogAdd("LOGGA_INFO: | " .. event .. " | " .. arg1 .. " | " .. arg2 .. " | " .. arg3)
 			end
 		end
 	end
